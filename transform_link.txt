@@ -1,0 +1,13 @@
+https://ria.ru/analytics/20180511/1520283712.html
+https://ria.ru/analytics/20180511/1520283712.html
+
+%2F == /
+%3A == :
+
+"/away.php?to=https%3A%2F%2Fria.ru%2Fanalytics%2F20180511%2F1520283712.html&post=-15755094_20847838&el=snippet"
+
+"/away.php?to=(.*?)&post=
+
+regexp1: re.sub('\"/away\.php\?to=(.*?)&post=.*?'\"', \1, string)
+regexp2: re.sub('%2F', '/', string)
+regexp3: re.sub('%3A', '\:', string)
